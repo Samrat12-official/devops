@@ -1,0 +1,63 @@
+To configure **npm in Visual Studio Code (VS Code)**, follow these steps to get everything set up for Node.js development:
+
+
+
+Step-by-Step Setup
+
+1.Install Node.js (includes npm)
+- Go to the [Node.js official website](https://nodejs.org/)
+- Download the installer for your operating system (Windows/macOS/Linux)
+- Run the installer and follow the setup instructions
+- This will install both **Node.js** and **npm**
+
+2. **Verify Installation**
+- Open **VS Code**
+- Launch the **Terminal** (`Ctrl + ~`)
+
+- Type:
+  ```bash
+  node -v
+  npm -v
+  
+ You should see version numbers for both Node.js and npm
+
+#### 3. **Initialize npm in Your Project**
+- In the terminal, navigate to your project folder:
+  ```bash
+  cd your-project-folder
+  ```
+- Run:
+  ```bash
+  npm init
+  ```
+- Follow the prompts to create a `package.json` file
+
+4. **Install Packages**
+- Example: Install Express
+  ```bash
+  npm install express
+  ```
+- This creates a `node_modules` folder and updates `package.json`
+
+ 5. **Use npm Scripts**
+- Add custom scripts in `package.json`:
+  ```json
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\""
+  }
+  ```
+- Run them with:
+  ```bash
+  npm run start
+  ```
+
+6. Enable IntelliSense and Debugging**
+- VS Code has built-in support for JavaScript and Node.js
+- You can install the **Node.js extension pack** from the Extensions tab for enhanced features
+
+---
+
+### 📘 Helpful Resources
+- [VS Code Node.js Tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
+- [GeeksforGeeks Setup Guide](https://www.geeksforgeeks.org/node-js/how-to-install-node-run-npm-in-vs-code/)
